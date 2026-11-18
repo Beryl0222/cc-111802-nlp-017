@@ -1,0 +1,16 @@
+[
+  {
+    "annotation_id": "ann-1",
+    "record_id": "reading-corpus-deduper-lesson-a",
+    "author": "王老师",
+    "body": "原稿表述准确，作为代表版本。",
+    "created_at": "2026-11-18T15:00:00Z"
+  },
+  {
+    "annotation_id": "ann-2",
+    "record_id": "lesson-a-west-5",
+    "author": "李老师",
+    "body": "五年级版本补充了年级信息，不能与三年级稿混并。",
+    "created_at": "2026-11-18T15:05:00Z"
+  }
+]

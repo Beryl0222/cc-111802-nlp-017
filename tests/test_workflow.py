@@ -19,11 +19,14 @@ class TextWorkflowTests(unittest.TestCase):
             first = {"record_id": "lesson-1", "source": "synthetic", "revision": 1,
                      "observed_at": "2026-11-18T09:00:00Z", "text": "原稿 甲乙", "context": "课堂"}
             second = {**first, "revision": 2, "text": "修订稿 乙丙"}
-            self.assertEqual(workflow.ingest([first]), {"received": 1, "stored": 1})
+            summary = workflow.ingest([first])
+            self.assertEqual(summary["received"], 1)
+            self.assertEqual(summary["stored"], 1)
             workflow.ingest([second, first])
             result = workflow.list_records()[0]
             self.assertEqual(result["revision"], 2)
-            self.assertEqual(result["text"], "修订稿 乙丙")
+            self.assertEqual(result["text"], "修订稿乙丙")
+            self.assertEqual(result["raw_text"], "修订稿 乙丙")
             self.assertEqual(result["analysis"]["token_count"], 5)
 
     def test_invalid_records_are_rejected_without_partial_write(self):

@@ -1,0 +1,16 @@
+[
+  {
+    "reference_id": "ref-course-1-lesson-a",
+    "course_id": "course-2026-autumn-1",
+    "record_id": "reading-corpus-deduper-lesson-a",
+    "created_at": "2026-11-18T14:00:00Z",
+    "note": "三年级语文备课引用原稿"
+  },
+  {
+    "reference_id": "ref-course-2-lesson-a-east",
+    "course_id": "course-2026-autumn-2",
+    "record_id": "lesson-a-east-1",
+    "created_at": "2026-11-18T14:05:00Z",
+    "note": "另一门课程引用东区版本，引用不随材料归并而合并"
+  }
+]
