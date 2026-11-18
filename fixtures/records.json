@@ -1,0 +1,18 @@
+[
+  {
+    "record_id": "reading-corpus-deduper-lesson-a",
+    "source": "school-synthetic",
+    "revision": 1,
+    "observed_at": "2026-11-18T09:00:00Z",
+    "text": "教研语料归并台需要保留材料身份和原文依据。",
+    "context": "教研演练"
+  },
+  {
+    "record_id": "reading-corpus-deduper-lesson-b",
+    "source": "school-synthetic",
+    "revision": 1,
+    "observed_at": "2026-11-18T09:05:00Z",
+    "text": "教师复核材料身份时应查看课程语境。",
+    "context": "课堂练习"
+  }
+]
